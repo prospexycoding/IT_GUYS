@@ -1,0 +1,572 @@
+
+
+.home-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: 91.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: 100%;
+    gap: 20px;
+    animation: change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.banner h1{
+    font-size: 70px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.banner h1 a{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner h1 h3{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+}
+
+.banner a button{
+    width: 120px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.js{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+    
+    transition: all .5s ease;
+    border-radius: 25px;
+    opacity: 0;
+    border: 1px solid white;
+}
+
+.banner a button:hover  .js{
+    opacity: 1;
+    width: 100%;
+}
+
+.banner a button:hover{
+    color: black;
+}
+
+
+/* services */
+
+.services{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.705),rgb(27, 27, 27));
+    padding-bottom: 50px;
+}
+
+.services h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+.service-design{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.service-design h3{
+    color: white;
+    text-align: center;
+    
+}
+
+.service-design p{
+    color: white;
+    text-align: center;
+}
+
+
+.serve-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.serve-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* membs */
+
+.membs{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+}
+
+.membs span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membs span h1{
+    color: orange;
+    font-size: 60px;
+}
+
+.membs span h4{
+    font-size: 12px;
+    color: white;
+}
+
+/*.get-in-touch{}  */
+
+.get-in-touch{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/contact.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    gap: 30px;
+}
+
+.get-in-touch h6{
+    color:white;
+    letter-spacing: 1px;
+    font-size: 46px;
+    border-top: 2px solid white;
+}
+
+
+.get-in-touch h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.get-in-touch a button{
+    width: 120px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.ge{
+    width: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    border-radius: 25px;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+
+}
+
+.get-in-touch a button:hover .ge{
+    width: 100%;
+    opacity: 1;
+}
+
+.get-in-touch a button:hover{
+    color: black;
+}
+
+
+
+@media(max-width:450px){
+    
+
+.home-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: 91.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: top center;
+    background-size: 50%;
+    gap: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/4.jpg");
+    animation: none;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    background-repeat: no-repeat;
+}
+
+.banner h1{
+    font-size: 35px;
+    font-weight: 100;color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.banner h1 h3{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+
+}
+
+
+.banner a button{
+    width: 120px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.js{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+    transition: all .5s ease;
+    border-radius: 25px;
+    opacity: 0;
+    border: 1px solid white;
+}
+
+.banner a button:hover  .js{
+    opacity: 1;
+    width: 100%;
+}
+
+.banner a button:hover{
+    color: black;
+}
+
+
+/* services */
+
+.services{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.705),rgb(0, 0, 0));
+}
+
+.services h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+.service-design{
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.service-design h3{
+    color: white;
+    text-align: center;
+    
+}
+
+.service-design p{
+    color: white;
+    text-align: center;
+}
+
+
+.serve-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.serve-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* membs */
+
+.membs{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+}
+
+.membs span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membs span h1{
+    color: orange;
+    font-size: 40px;
+}
+
+.membs span h4{
+    font-size: 13px;
+    color: white;
+}
+
+/*.get-in-touch{}  */
+
+.get-in-touch{
+    width: 100%;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background:linear-gradient(rgba(127, 119, 119, 0.705),rgb(0, 0, 0));
+    gap: 30px;
+}
+
+.get-in-touch h6{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 26px;
+    border-top: 2px solid white;
+}
+
+
+.get-in-touch h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.get-in-touch a button{
+    width: 120px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.ge{
+    width: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    border-radius: 25px;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+
+}
+
+.get-in-touch a button:hover .ge{
+    width: 100%;
+    opacity: 1;
+}
+
+.get-in-touch a button:hover{
+    color: black;
+}
+
+}
+
+
+
+
+
+/* Animation for the banner;p0 */
+@keyframes change{
+    0%{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/2.jpg");
+            background-position: center center;
+            background-size: 100%;
+            transform: translateX(0px);
+                background-repeat: no-repeat;
+
+
+    }
+
+    25%{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/1.jpg");
+        transition: transform 1000s ease;
+            background-position:  top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+
+
+    }
+
+    50%{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/4.jpg");
+        transition: transform 10s ease;
+            background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    75%{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/banner2.jpg");
+        transition: transform 10s ease;
+        background-position:  top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+
+    100%{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) ,rgba(0, 0, 0, 0.993)),  url("/src/images/2.jpg");
+        transition: all 10s ease;
+            background-position: center center;
+            background-size: 100%;
+                background-repeat: no-repeat;
+
+    }
+
+}

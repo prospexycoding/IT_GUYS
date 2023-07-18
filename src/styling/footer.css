@@ -1,0 +1,169 @@
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) ,rgba(0, 0, 0, 0.993));
+}
+
+footer p{
+    font-size: 12px;
+    color: white;
+
+}
+
+
+
+
+/* footer2 */
+.footer-2{
+   width: 100%;
+   height: 450px;
+   display: flex;
+   justify-content: space-around;
+   align-items:flex-start;
+   background-color: rgb(27, 27, 27);
+   padding: 0px 30px;
+   padding-top: 40px;
+   overflow: hidden;
+}
+
+
+.foot{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+  gap: 15px;
+}
+
+.foot h1{
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.stuff{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.stuff a{
+    color: white;
+}
+
+.stuff h3{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.stuff h4{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.stuff h4 img{
+    width:25px;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.stuff h4 img:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:450px){
+    footer{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.575) ,rgba(0, 0, 0, 0.993));
+    }
+    
+    footer p{
+        font-size: 10px;
+        color: white;
+    
+    }
+    .footer-2{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:flex-start;
+        background-color: rgb(27, 27, 27);
+        padding: 0px 30px;
+        padding-top: 40px;
+        gap: 40px;
+        padding-bottom: 40px;
+     }
+     
+     
+     .foot{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items:flex-start;
+       gap: 15px;
+     }
+     
+     .foot h1{
+        font-size: 20px;
+         color: orange;
+         font-family: 'Times New Roman', Times, serif;
+     }
+     
+     .stuff{
+         width:100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 20px;
+     }
+     
+     .stuff a{
+         color: white;
+     }
+     
+     .stuff h3{
+         color: white;
+         font-size: 13px;
+         font-weight: 400;
+     }
+     
+     .stuff h4{
+         width: 100%;
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         gap: 10px;
+         color: white;
+         font-weight: 400;
+     }
+     
+     .stuff h4 img{
+         width:20px;
+         transition: transform .5s ease;
+         cursor: pointer;
+     }
+     
+     .stuff h4 img:hover{
+         transform: scale(1.2);
+     }
+}
